@@ -55,6 +55,7 @@ export default {
 .portfolio {
   margin-left: 5%;
   margin-bottom: 40px;
+  height: 100vh;
 }
 h2 {
   font-size: 2em;
