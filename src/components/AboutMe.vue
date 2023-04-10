@@ -1,11 +1,14 @@
 <template>
-  <section class="about-me">
+  <section  class="about-me">
+    <a name="AboutMe" ></a>
     <h2>About Me</h2>
+<span class="menu-icon lnr lnr-briefcase"></span>
     <p>{{ about }}</p>
   </section>
 </template>
 
 <script>
+
 export default {
   data() {
     return {
@@ -17,9 +20,8 @@ export default {
 
 <style scoped>
 .about-me {
-  /*max-width: 100%;*/
-  /*margin: 50px 5% 0 5%;*/
-  margin-left: 95px;
+ margin-left: 98px;
+
   background-color: #252525;
   color: #fff;
   padding: 50px;
@@ -37,33 +39,5 @@ export default {
 
 /* Адаптивные стили */
 
-@media only screen and (max-width: 768px) {
-  .about-me {
-    margin: 50px 5%;
-    padding: 30px;
-  }
 
-  .about-me h2 {
-    font-size: 1.5em;
-  }
-
-  .about-me p {
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .about-me {
-    margin: 30px 5%;
-    padding: 20px;
-  }
-
-  .about-me h2 {
-    font-size: 1.2em;
-  }
-
-  .about-me p {
-    font-size: 0.9em;
-  }
-}
 </style>

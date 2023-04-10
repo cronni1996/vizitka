@@ -53,7 +53,7 @@ export default {
 
 <style scoped>
 .portfolio {
-  margin-left: 5%;
+  margin-left: 98px;
   margin-bottom: 40px;
   height: 100vh;
 }

@@ -27,6 +27,7 @@ export default {
 
 <style scoped>
 .footer {
+  margin-left: 98px;
   background-color: #252525;
   color: #fff;
   padding: 40px 20px;
