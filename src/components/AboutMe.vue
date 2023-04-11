@@ -8,7 +8,7 @@
 </template>
 
 <script>
-
+// import BackgroundScript from '../components/script'
 export default {
   data() {
     return {
@@ -22,7 +22,7 @@ export default {
 .about-me {
  margin-left: 98px;
 
-  background-color: #252525;
+  /*background-image: url("../src/views/back.html") ;*/
   color: #fff;
   padding: 50px;
   height: 100vh;
