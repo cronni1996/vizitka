@@ -1,4 +1,5 @@
 <template>
+
   <div class="header-container  ">
       <div >
         <header class="header ">
@@ -7,25 +8,24 @@
         <div class="menu-container">
           <div class="menu">
             <div class="menu-item-container mb-2">
-              <button class="menu-item btn btn-outline-light btn-sm">
-                <img class="about-me" src="../img/lnr-user.svg" alt="About"/> About
-              </button>
+              <router-link to="/aboutMe" class="menu-item bi  bi-person btn btn-outline-light btn-sm" >About
+              </router-link>
             </div>
             <div class="menu-item-container mb-2">
-              <button class="menu-item btn btn-outline-light btn-sm">
-                <img class="about-me" src="../img/lnr-graduation-hat.svg" alt="Home"/> Skills
-              </button>
+              <router-link to="/skills" class="menu-item bi bi-mortarboard btn btn-outline-light btn-sm">Skills</router-link>
             </div>
             <div class="menu-item-container mb-2">
-              <button class="menu-item btn btn-outline-light btn-sm" href="#AboutMe">
-                <img class="about-me" src="../img/lnr-briefcase.svg"   alt="Portfolio"/> Portfolio
-              </button>
+              <router-link to="/portfolio" class="menu-item bi bi-briefcase btn btn-outline-light btn-sm">
+                 Portfolio
+              </router-link>
             </div>
             <div class="menu-item-container mb-2">
-              <button class="menu-item btn btn-outline-light btn-sm">
-                <img class="about-me" src="../img/lnr-envelope.svg" alt="Contact"/> Contacts
-              </button>
+              <router-link to="contacts" class="menu-item bi bi-envelope btn btn-outline-light btn-sm">
+                 Contacts<router-link to="/aboutMe"/>
+              </router-link>
             </div>
+
+
 
 
 
@@ -35,20 +35,19 @@
             <div class="sociates1 d-flex justify-content-center justify-content-md-end">
               <div class="linked me-2">
                 <button onclick="window.open('https://www.linkedin.com/in/pavel-malukow/', '_blank')"
-                        class="linked-button btn btn-outline-light btn-sm">
-                  <img class="linked-logo" src="../img/linkedin-logo.png" alt="Linked"/>
+                        class="linked-button bi bi-linkedin btn btn-outline-light btn-sm">
                 </button>
               </div>
               <div class="Git">
                 <button onclick="window.open('https://github.com/cronni1996', '_blank')"
-                        class="git-button lnr lnr-apartment btn btn-outline-light btn-sm">
-                  <img class="git-logo" src="../img/github.png" alt="GitHub"/>
+                        class="git-button bi bi-github btn btn-outline-light btn-sm">
+
                 </button>
               </div>
             </div>
           </div>
         </div>
-
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
       </header>
       </div>
 
@@ -64,8 +63,9 @@
 
 <style scoped>
 .header-container {
+
   width: 98px;
-background-color: #adadad;
+
   height: 100%;
   position: fixed;
   left: 0;
@@ -73,7 +73,9 @@ background-color: #adadad;
 }
 
 
-
+.menu{
+  box-sizing: revert;
+}
 
 
 .menu-container {
@@ -84,8 +86,10 @@ background-color: #adadad;
 
 }
 
-.about-me {
-  color: white;
+.bi {
+  color: #c2c2c2;
+  font-size: 19px;
+
   width: 35px;
   height: 35px;
 }
@@ -99,8 +103,12 @@ background-color: #adadad;
 }
 
 .menu-item {
+  display: grid;
   padding-bottom: 0px;
   margin: 0px -6px 10px -7px;
+  height: 50px;
+  width: 130%;
+  justify-content: center;
 
 }
 
@@ -124,13 +132,5 @@ background-color: #adadad;
 
 }
 
-.linked-logo {
-  width: 20px;
 
-}
-
-
-.git-logo {
-  width: 20px;
-}
 </style>

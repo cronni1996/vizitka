@@ -1,4 +1,5 @@
 <template>
+  <Header/>
   <div class="portfolio">
     <h2>Portfolio</h2>
     <ul class="portfolio-list">
@@ -19,7 +20,11 @@
 </template>
 
 <script>
+import Header from ".//Header.vue"
 export default {
+  components:{
+    Header
+  },
   name: 'Portfolio',
   data() {
     return {

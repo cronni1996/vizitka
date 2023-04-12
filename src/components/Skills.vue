@@ -1,4 +1,5 @@
 <template>
+  <Header/>
   <div class="skills">
     <h2>Skills</h2>
     <ul>
@@ -15,8 +16,14 @@
 </template>
 
 <script>
+import Header from ".//Header.vue"
 export default {
+  components: {
+    Header
+  },
+
   name: 'Skills',
+
   data() {
     return {
       skills: [
