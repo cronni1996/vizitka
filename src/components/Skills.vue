@@ -88,7 +88,7 @@ li {
     width: 0;
   }
   100% {
-    width: var(--progress-width, 0);
+    /*width: var(--progress-width, 0);*/
   }
 }
 </style>
